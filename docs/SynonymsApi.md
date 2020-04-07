@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 # **get_all_any_designations**
-> get_all_any_designations()
+> SynonymList get_all_any_designations()
 
 
 
@@ -43,7 +43,8 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 
 try:
-    api_instance.get_all_any_designations()
+    api_response = api_instance.get_all_any_designations()
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_all_any_designations: %s\n" % e)
 ```
@@ -53,7 +54,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -67,7 +68,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_end_designations**
-> get_all_end_designations()
+> SynonymList get_all_end_designations()
 
 
 
@@ -83,7 +84,8 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 
 try:
-    api_instance.get_all_end_designations()
+    api_response = api_instance.get_all_end_designations()
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_all_end_designations: %s\n" % e)
 ```
@@ -93,7 +95,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -107,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designated_any_all_words**
-> get_designated_any_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+> SynonymList get_designated_any_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
 
 
 
@@ -126,7 +128,8 @@ position_code = 'position_code_example' # str |  (optional)
 lang = 'lang_example' # str |  (optional)
 
 try:
-    api_instance.get_designated_any_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    api_response = api_instance.get_designated_any_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designated_any_all_words: %s\n" % e)
 ```
@@ -141,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -155,7 +158,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designated_end_all_words**
-> get_designated_end_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+> SynonymList get_designated_end_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
 
 
 
@@ -174,7 +177,8 @@ position_code = 'position_code_example' # str |  (optional)
 lang = 'lang_example' # str |  (optional)
 
 try:
-    api_instance.get_designated_end_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    api_response = api_instance.get_designated_end_all_words(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designated_end_all_words: %s\n" % e)
 ```
@@ -189,7 +193,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -203,7 +207,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designation_all_in_name**
-> get_designation_all_in_name(name=name)
+> SynonymList get_designation_all_in_name(name=name)
 
 
 
@@ -220,7 +224,8 @@ api_instance = swagger_client.SynonymsApi()
 name = 'name_example' # str |  (optional)
 
 try:
-    api_instance.get_designation_all_in_name(name=name)
+    api_response = api_instance.get_designation_all_in_name(name=name)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designation_all_in_name: %s\n" % e)
 ```
@@ -233,7 +238,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -247,7 +252,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designation_any_in_name**
-> get_designation_any_in_name(name=name)
+> SynonymList get_designation_any_in_name(name=name)
 
 
 
@@ -264,7 +269,8 @@ api_instance = swagger_client.SynonymsApi()
 name = 'name_example' # str |  (optional)
 
 try:
-    api_instance.get_designation_any_in_name(name=name)
+    api_response = api_instance.get_designation_any_in_name(name=name)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designation_any_in_name: %s\n" % e)
 ```
@@ -277,7 +283,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -291,7 +297,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designation_end_in_name**
-> get_designation_end_in_name(name=name)
+> SynonymList get_designation_end_in_name(name=name)
 
 
 
@@ -308,7 +314,8 @@ api_instance = swagger_client.SynonymsApi()
 name = 'name_example' # str |  (optional)
 
 try:
-    api_instance.get_designation_end_in_name(name=name)
+    api_response = api_instance.get_designation_end_in_name(name=name)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designation_end_in_name: %s\n" % e)
 ```
@@ -321,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -335,7 +342,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_designations**
-> get_designations(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+> SynonymList get_designations(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
 
 
 
@@ -354,7 +361,8 @@ position_code = 'position_code_example' # str |  (optional)
 lang = 'lang_example' # str |  (optional)
 
 try:
-    api_instance.get_designations(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    api_response = api_instance.get_designations(entity_type_code=entity_type_code, position_code=position_code, lang=lang)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_designations: %s\n" % e)
 ```
@@ -369,7 +377,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -383,7 +391,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entity_type_any_designation**
-> get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+> SynonymList get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
 
 
 
@@ -401,7 +409,8 @@ entity_any_designation_dict = 'entity_any_designation_dict_example' # str |  (op
 all_designation_any_end_list = 'all_designation_any_end_list_example' # str |  (optional)
 
 try:
-    api_instance.get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+    api_response = api_instance.get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_entity_type_any_designation: %s\n" % e)
 ```
@@ -415,7 +424,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -429,7 +438,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entity_type_by_value**
-> get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
+> SynonymList get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
 
 
 
@@ -447,7 +456,8 @@ entity_type_dicts = 'entity_type_dicts_example' # str |  (optional)
 designation = 'designation_example' # str |  (optional)
 
 try:
-    api_instance.get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
+    api_response = api_instance.get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_entity_type_by_value: %s\n" % e)
 ```
@@ -461,7 +471,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -475,7 +485,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entity_type_end_designation**
-> get_entity_type_end_designation(entity_end_designation_dict=entity_end_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+> SynonymList get_entity_type_end_designation(entity_end_designation_dict=entity_end_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
 
 
 
@@ -493,7 +503,8 @@ entity_end_designation_dict = 'entity_end_designation_dict_example' # str |  (op
 all_designation_any_end_list = 'all_designation_any_end_list_example' # str |  (optional)
 
 try:
-    api_instance.get_entity_type_end_designation(entity_end_designation_dict=entity_end_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+    api_response = api_instance.get_entity_type_end_designation(entity_end_designation_dict=entity_end_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_entity_type_end_designation: %s\n" % e)
 ```
@@ -507,7 +518,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -521,7 +532,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_misplaced_any_designations**
-> get_misplaced_any_designations(name=name, designation_any_entity_type=designation_any_entity_type)
+> SynonymList get_misplaced_any_designations(name=name, designation_any_entity_type=designation_any_entity_type)
 
 
 
@@ -539,7 +550,8 @@ name = 'name_example' # str |  (optional)
 designation_any_entity_type = 'designation_any_entity_type_example' # str |  (optional)
 
 try:
-    api_instance.get_misplaced_any_designations(name=name, designation_any_entity_type=designation_any_entity_type)
+    api_response = api_instance.get_misplaced_any_designations(name=name, designation_any_entity_type=designation_any_entity_type)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_misplaced_any_designations: %s\n" % e)
 ```
@@ -553,7 +565,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -567,7 +579,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_misplaced_end_designations**
-> get_misplaced_end_designations(name=name, designation_end_entity_type=designation_end_entity_type)
+> SynonymList get_misplaced_end_designations(name=name, designation_end_entity_type=designation_end_entity_type)
 
 
 
@@ -585,7 +597,8 @@ name = 'name_example' # str |  (optional)
 designation_end_entity_type = 'designation_end_entity_type_example' # str |  (optional)
 
 try:
-    api_instance.get_misplaced_end_designations(name=name, designation_end_entity_type=designation_end_entity_type)
+    api_response = api_instance.get_misplaced_end_designations(name=name, designation_end_entity_type=designation_end_entity_type)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_misplaced_end_designations: %s\n" % e)
 ```
@@ -599,7 +612,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -613,7 +626,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_number_words**
-> get_number_words()
+> SynonymList get_number_words()
 
 
 
@@ -629,7 +642,8 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 
 try:
-    api_instance.get_number_words()
+    api_response = api_instance.get_number_words()
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_number_words: %s\n" % e)
 ```
@@ -639,7 +653,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -653,7 +667,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_prefixes**
-> get_prefixes()
+> SynonymList get_prefixes()
 
 
 
@@ -669,7 +683,8 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 
 try:
-    api_instance.get_prefixes()
+    api_response = api_instance.get_prefixes()
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_prefixes: %s\n" % e)
 ```
@@ -679,7 +694,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -693,7 +708,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_stop_words**
-> get_stop_words(word=word)
+> SynonymList get_stop_words(word=word)
 
 
 
@@ -710,7 +725,8 @@ api_instance = swagger_client.SynonymsApi()
 word = 'word_example' # str |  (optional)
 
 try:
-    api_instance.get_stop_words(word=word)
+    api_response = api_instance.get_stop_words(word=word)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_stop_words: %s\n" % e)
 ```
@@ -723,7 +739,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -783,7 +799,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_transform_text**
-> get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
+> SynonymList get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
 
 
 
@@ -803,7 +819,8 @@ prefix_list = 'prefix_list_example' # str |  (optional)
 number_list = 'number_list_example' # str |  (optional)
 
 try:
-    api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
+    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_transform_text: %s\n" % e)
 ```
@@ -819,7 +836,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -833,7 +850,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_word_substitutions**
-> get_word_substitutions(word=word)
+> SynonymList get_word_substitutions(word=word)
 
 
 
@@ -850,7 +867,8 @@ api_instance = swagger_client.SynonymsApi()
 word = 'word_example' # str |  (optional)
 
 try:
-    api_instance.get_word_substitutions(word=word)
+    api_response = api_instance.get_word_substitutions(word=word)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_word_substitutions: %s\n" % e)
 ```
@@ -863,7 +881,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
@@ -877,7 +895,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_word_synonyms**
-> get_word_synonyms(word=word)
+> SynonymList get_word_synonyms(word=word)
 
 
 
@@ -894,7 +912,8 @@ api_instance = swagger_client.SynonymsApi()
 word = 'word_example' # str |  (optional)
 
 try:
-    api_instance.get_word_synonyms(word=word)
+    api_response = api_instance.get_word_synonyms(word=word)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_word_synonyms: %s\n" % e)
 ```
@@ -907,7 +926,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
