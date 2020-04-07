@@ -659,31 +659,6 @@
         }
       }
     },
-    "SynonymDictionaryList" : {
-      "type" : "object",
-      "properties" : {
-        "data" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/DictionaryList"
-          }
-        }
-      }
-    },
-    "DictionaryList" : {
-      "type" : "object",
-      "properties" : {
-        "key" : {
-          "type" : "string"
-        },
-        "list" : {
-          "type" : "array",
-          "items" : {
-            "type" : "string"
-          }
-        }
-      }
-    },
     "String" : {
       "type" : "object",
       "properties" : {
