@@ -1,6 +1,6 @@
 # swagger_client.NameProcessingApi
 
-All URIs are relative to *https://localhost/api/v1*
+All URIs are relative to *https://virtserver.swaggerhub.com/lucaslopatka/bcgov-namex-synonyms-api/1.0.0*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
