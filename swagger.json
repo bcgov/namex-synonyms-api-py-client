@@ -1,457 +1,556 @@
 {
-  "swagger" : "2.0",
-  "paths" : {
-    "/name-processing/" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
+    "swagger": "2.0",
+    "basePath": "/api/v1",
+    "paths": {
+        "/name-processing/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___word_classification",
+                "tags": [
+                    "NameProcessing"
+                ]
+            }
         },
-        "operationId" : "get___word_classification",
-        "tags" : [ "NameProcessing" ]
-      }
+        "/synonyms/all-any-designations": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___all_any_designations",
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/all-end-designations": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___all_end_designations",
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designated-any-all-words": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designated_any_all_words",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_type_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "position_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "lang",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designated-end-all-words": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designated_end_all_words",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_type_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "position_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "lang",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designation-all-in-name": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designation_all_in_name",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "name",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designation-any-in-name": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designation_any_in_name",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "name",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designation-end-in-name": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designation_end_in_name",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "name",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/designations": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___designations",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_type_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "position_code",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "lang",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/entity-type-any-designation": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___entity_type_any_designation",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_any_designation_dict",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "all_designation_any_end_list",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/entity-type-by-value": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___entity_type_by_value",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_type_dicts",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "designation",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/entity-type-end-designation": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___entity_type_end_designation",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "entity_end_designation_dict",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "all_designation_any_end_list",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/misplaced-any-designations": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___misplaced_any_designations",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "name",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "designation_any_entity_type",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/misplaced-end-designations": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___misplaced_end_designations",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "name",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "designation_end_entity_type",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/number-words": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___number_words",
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/prefixes": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___prefixes",
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/probes/liveness": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___liveness",
+                "tags": [
+                    "Probes"
+                ]
+            }
+        },
+        "/synonyms/probes/readiness": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___readiness",
+                "tags": [
+                    "Probes"
+                ]
+            }
+        },
+        "/synonyms/stop-words": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___stop_words",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "word",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/substitutions": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___word_substitutions",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "word",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/synonyms": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___word_synonyms",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "word",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/transform-text": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___transform_text",
+                "parameters": [
+                    {
+                        "description": "",
+                        "name": "text",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "designation_all",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "prefix_list",
+                        "type": "string",
+                        "in": "query"
+                    },
+                    {
+                        "description": "",
+                        "name": "number_list",
+                        "type": "string",
+                        "in": "query"
+                    }
+                ],
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        },
+        "/synonyms/{col}/{term}": {
+            "parameters": [
+                {
+                    "name": "col",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                },
+                {
+                    "name": "term",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "get___synonyms",
+                "tags": [
+                    "Synonyms"
+                ]
+            }
+        }
     },
-    "/synonyms/all-any-designations" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___all_any_designations",
-        "tags" : [ "Synonyms" ]
-      }
+    "info": {
+        "title": "Synonyms API",
+        "version": "1.0",
+        "description": "Retrieves the sets of synonyms for a given word."
     },
-    "/synonyms/all-end-designations" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
+    "produces": [
+        "application/json"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "tags": [
+        {
+            "name": "Probes",
+            "description": "Operations probes to determine liveness and readiness"
         },
-        "operationId" : "get___all_end_designations",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designated-any-all-words" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
+        {
+            "name": "Synonyms",
+            "description": "Synonyms Service - Used by Namex API and Name Processing Service"
         },
-        "operationId" : "get___designated_any_all_words",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_type_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "position_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "lang",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designated-end-all-words" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
+        {
+            "name": "NameProcessing",
+            "description": "Name Processing Service - Used by Namex API"
+        }
+    ],
+    "responses": {
+        "ParseError": {
+            "description": "When a mask can't be parsed"
         },
-        "operationId" : "get___designated_end_all_words",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_type_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "position_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "lang",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designation-all-in-name" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___designation_all_in_name",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "name",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designation-any-in-name" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___designation_all_in_name",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "name",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designation-end-in-name" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___designation_end_in_name",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "name",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/designations" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___designations",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_type_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "position_code",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "lang",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/entity-type-any-designation" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___entity_type_any_designation",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_any_designation_dict",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "all_designation_any_end_list",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/entity-type-by-value" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___entity_type_by_value",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_type_dicts",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "designation",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/entity-type-end-designation" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___entity_type_end_designation",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "entity_end_designation_dict",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "all_designation_any_end_list",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/misplaced-any-designations" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___misplaced_any_designations",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "name",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "designation_any_entity_type",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/misplaced-end-designations" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___misplaced_end_designations",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "name",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "designation_end_entity_type",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/number-words" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___number_words",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/prefixes" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___prefixes",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/probes/liveness" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___liveness",
-        "tags" : [ "Probes" ]
-      }
-    },
-    "/synonyms/probes/readiness" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___readiness",
-        "tags" : [ "Probes" ]
-      }
-    },
-    "/synonyms/stop-words/{word}" : {
-      "parameters" : [ {
-        "name" : "word",
-        "in" : "path",
-        "required" : true,
-        "type" : "string"
-      } ],
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___word_stops",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/substitutions/{word}" : {
-      "parameters" : [ {
-        "name" : "word",
-        "in" : "path",
-        "required" : true,
-        "type" : "string"
-      } ],
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___word_substitutions",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/synonyms/{word}" : {
-      "parameters" : [ {
-        "name" : "word",
-        "in" : "path",
-        "required" : true,
-        "type" : "string"
-      } ],
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___word_synonyms",
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/transform-text" : {
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___transform_text",
-        "parameters" : [ {
-          "description" : "",
-          "name" : "text",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "designation_all",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "prefix_list",
-          "type" : "string",
-          "in" : "query"
-        }, {
-          "description" : "",
-          "name" : "number_list",
-          "type" : "string",
-          "in" : "query"
-        } ],
-        "tags" : [ "Synonyms" ]
-      }
-    },
-    "/synonyms/{col}/{term}" : {
-      "parameters" : [ {
-        "name" : "col",
-        "in" : "path",
-        "required" : true,
-        "type" : "string"
-      }, {
-        "name" : "term",
-        "in" : "path",
-        "required" : true,
-        "type" : "string"
-      } ],
-      "get" : {
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        },
-        "operationId" : "get___synonyms",
-        "tags" : [ "Synonyms" ]
-      }
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        }
     }
-  },
-  "info" : {
-    "title" : "Synonyms API",
-    "version" : "1.0.0",
-    "description" : "Retrieves the sets of synonyms for a given word."
-  },
-  "produces" : [ "application/json" ],
-  "consumes" : [ "application/json" ],
-  "tags" : [ {
-    "name" : "Probes",
-    "description" : "Operations probes to determine liveness and readiness"
-  }, {
-    "name" : "Synonyms",
-    "description" : "Synonyms Service - Used by Namex API and Name Processing Service"
-  }, {
-    "name" : "NameProcessing",
-    "description" : "Name Processing Service - Used by Namex API"
-  } ],
-  "responses" : {
-    "ParseError" : {
-      "description" : "When a mask can't be parsed"
-    },
-    "MaskError" : {
-      "description" : "When any error occurs on mask"
-    }
-  },
-  "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/lucaslopatka/bcgov-namex-synonyms-api/1.0.0",
-  "schemes" : [ "https" ]
 }

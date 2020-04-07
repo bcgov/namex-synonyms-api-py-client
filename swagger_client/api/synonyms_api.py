@@ -33,6 +33,665 @@ class SynonymsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def get_all_any_designations(self, **kwargs):  # noqa: E501
+        """get_all_any_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_any_designations(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_all_any_designations_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_all_any_designations_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_all_any_designations_with_http_info(self, **kwargs):  # noqa: E501
+        """get_all_any_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_any_designations_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_all_any_designations" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/all-any-designations', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_all_end_designations(self, **kwargs):  # noqa: E501
+        """get_all_end_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_end_designations(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_all_end_designations_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_all_end_designations_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_all_end_designations_with_http_info(self, **kwargs):  # noqa: E501
+        """get_all_end_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_end_designations_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_all_end_designations" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/all-end-designations', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_designated_any_all_words(self, **kwargs):  # noqa: E501
+        """get_designated_any_all_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designated_any_all_words(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_code: 
+        :param str position_code: 
+        :param str lang: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_designated_any_all_words_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_designated_any_all_words_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_designated_any_all_words_with_http_info(self, **kwargs):  # noqa: E501
+        """get_designated_any_all_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designated_any_all_words_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_code: 
+        :param str position_code: 
+        :param str lang: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['entity_type_code', 'position_code', 'lang']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_designated_any_all_words" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_type_code' in params:
+            query_params.append(('entity_type_code', params['entity_type_code']))  # noqa: E501
+        if 'position_code' in params:
+            query_params.append(('position_code', params['position_code']))  # noqa: E501
+        if 'lang' in params:
+            query_params.append(('lang', params['lang']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/designated-any-all-words', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_designated_end_all_words(self, **kwargs):  # noqa: E501
+        """get_designated_end_all_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designated_end_all_words(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_code: 
+        :param str position_code: 
+        :param str lang: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_designated_end_all_words_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_designated_end_all_words_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_designated_end_all_words_with_http_info(self, **kwargs):  # noqa: E501
+        """get_designated_end_all_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designated_end_all_words_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_code: 
+        :param str position_code: 
+        :param str lang: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['entity_type_code', 'position_code', 'lang']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_designated_end_all_words" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_type_code' in params:
+            query_params.append(('entity_type_code', params['entity_type_code']))  # noqa: E501
+        if 'position_code' in params:
+            query_params.append(('position_code', params['position_code']))  # noqa: E501
+        if 'lang' in params:
+            query_params.append(('lang', params['lang']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/designated-end-all-words', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_designation_all_in_name(self, **kwargs):  # noqa: E501
+        """get_designation_all_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_all_in_name(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_designation_all_in_name_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_designation_all_in_name_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_designation_all_in_name_with_http_info(self, **kwargs):  # noqa: E501
+        """get_designation_all_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_all_in_name_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_designation_all_in_name" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in params:
+            query_params.append(('name', params['name']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/designation-all-in-name', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_designation_any_in_name(self, **kwargs):  # noqa: E501
+        """get_designation_any_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_any_in_name(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_designation_any_in_name_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_designation_any_in_name_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_designation_any_in_name_with_http_info(self, **kwargs):  # noqa: E501
+        """get_designation_any_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_any_in_name_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_designation_any_in_name" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in params:
+            query_params.append(('name', params['name']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/designation-any-in-name', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_designation_end_in_name(self, **kwargs):  # noqa: E501
+        """get_designation_end_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_end_in_name(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_designation_end_in_name_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_designation_end_in_name_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_designation_end_in_name_with_http_info(self, **kwargs):  # noqa: E501
+        """get_designation_end_in_name  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_designation_end_in_name_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_designation_end_in_name" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in params:
+            query_params.append(('name', params['name']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/designation-end-in-name', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_designations(self, **kwargs):  # noqa: E501
         """get_designations  # noqa: E501
 
@@ -120,6 +779,491 @@ class SynonymsApi(object):
 
         return self.api_client.call_api(
             '/synonyms/designations', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_entity_type_any_designation(self, **kwargs):  # noqa: E501
+        """get_entity_type_any_designation  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_any_designation(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_any_designation_dict: 
+        :param str all_designation_any_end_list: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_entity_type_any_designation_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_entity_type_any_designation_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_entity_type_any_designation_with_http_info(self, **kwargs):  # noqa: E501
+        """get_entity_type_any_designation  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_any_designation_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_any_designation_dict: 
+        :param str all_designation_any_end_list: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['entity_any_designation_dict', 'all_designation_any_end_list']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_entity_type_any_designation" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_any_designation_dict' in params:
+            query_params.append(('entity_any_designation_dict', params['entity_any_designation_dict']))  # noqa: E501
+        if 'all_designation_any_end_list' in params:
+            query_params.append(('all_designation_any_end_list', params['all_designation_any_end_list']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/entity-type-any-designation', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_entity_type_by_value(self, **kwargs):  # noqa: E501
+        """get_entity_type_by_value  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_by_value(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_dicts: 
+        :param str designation: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_entity_type_by_value_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_entity_type_by_value_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_entity_type_by_value_with_http_info(self, **kwargs):  # noqa: E501
+        """get_entity_type_by_value  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_by_value_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_type_dicts: 
+        :param str designation: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['entity_type_dicts', 'designation']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_entity_type_by_value" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_type_dicts' in params:
+            query_params.append(('entity_type_dicts', params['entity_type_dicts']))  # noqa: E501
+        if 'designation' in params:
+            query_params.append(('designation', params['designation']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/entity-type-by-value', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_entity_type_end_designation(self, **kwargs):  # noqa: E501
+        """get_entity_type_end_designation  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_end_designation(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_end_designation_dict: 
+        :param str all_designation_any_end_list: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_entity_type_end_designation_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_entity_type_end_designation_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_entity_type_end_designation_with_http_info(self, **kwargs):  # noqa: E501
+        """get_entity_type_end_designation  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_entity_type_end_designation_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str entity_end_designation_dict: 
+        :param str all_designation_any_end_list: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['entity_end_designation_dict', 'all_designation_any_end_list']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_entity_type_end_designation" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'entity_end_designation_dict' in params:
+            query_params.append(('entity_end_designation_dict', params['entity_end_designation_dict']))  # noqa: E501
+        if 'all_designation_any_end_list' in params:
+            query_params.append(('all_designation_any_end_list', params['all_designation_any_end_list']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/entity-type-end-designation', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_misplaced_any_designations(self, **kwargs):  # noqa: E501
+        """get_misplaced_any_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_misplaced_any_designations(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :param str designation_any_entity_type: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_misplaced_any_designations_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_misplaced_any_designations_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_misplaced_any_designations_with_http_info(self, **kwargs):  # noqa: E501
+        """get_misplaced_any_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_misplaced_any_designations_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :param str designation_any_entity_type: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name', 'designation_any_entity_type']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_misplaced_any_designations" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in params:
+            query_params.append(('name', params['name']))  # noqa: E501
+        if 'designation_any_entity_type' in params:
+            query_params.append(('designation_any_entity_type', params['designation_any_entity_type']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/misplaced-any-designations', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_misplaced_end_designations(self, **kwargs):  # noqa: E501
+        """get_misplaced_end_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_misplaced_end_designations(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :param str designation_end_entity_type: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_misplaced_end_designations_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_misplaced_end_designations_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_misplaced_end_designations_with_http_info(self, **kwargs):  # noqa: E501
+        """get_misplaced_end_designations  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_misplaced_end_designations_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str name: 
+        :param str designation_end_entity_type: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['name', 'designation_end_entity_type']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_misplaced_end_designations" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in params:
+            query_params.append(('name', params['name']))  # noqa: E501
+        if 'designation_end_entity_type' in params:
+            query_params.append(('designation_end_entity_type', params['designation_end_entity_type']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/misplaced-end-designations', 'GET',
             path_params,
             query_params,
             header_params,
@@ -298,6 +1442,99 @@ class SynonymsApi(object):
 
         return self.api_client.call_api(
             '/synonyms/prefixes', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_stop_words(self, **kwargs):  # noqa: E501
+        """get_stop_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_stop_words(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str word: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_stop_words_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_stop_words_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_stop_words_with_http_info(self, **kwargs):  # noqa: E501
+        """get_stop_words  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_stop_words_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str word: 
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['word']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_stop_words" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'word' in params:
+            query_params.append(('word', params['word']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/stop-words', 'GET',
             path_params,
             query_params,
             header_params,
@@ -522,134 +1759,37 @@ class SynonymsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_word_stops(self, word, **kwargs):  # noqa: E501
-        """get_word_stops  # noqa: E501
+    def get_word_substitutions(self, **kwargs):  # noqa: E501
+        """get_word_substitutions  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_stops(word, async_req=True)
+        >>> thread = api.get_word_substitutions(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str word: (required)
+        :param str word: 
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_word_stops_with_http_info(word, **kwargs)  # noqa: E501
+            return self.get_word_substitutions_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_word_stops_with_http_info(word, **kwargs)  # noqa: E501
+            (data) = self.get_word_substitutions_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_word_stops_with_http_info(self, word, **kwargs):  # noqa: E501
-        """get_word_stops  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_stops_with_http_info(word, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str word: (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['word']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method get_word_stops" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'word' is set
-        if ('word' not in params or
-                params['word'] is None):
-            raise ValueError("Missing the required parameter `word` when calling `get_word_stops`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'word' in params:
-            path_params['word'] = params['word']  # noqa: E501
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = []  # noqa: E501
-
-        return self.api_client.call_api(
-            '/synonyms/stop-words/{word}', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type=None,  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def get_word_substitutions(self, word, **kwargs):  # noqa: E501
+    def get_word_substitutions_with_http_info(self, **kwargs):  # noqa: E501
         """get_word_substitutions  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_substitutions(word, async_req=True)
+        >>> thread = api.get_word_substitutions_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str word: (required)
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.get_word_substitutions_with_http_info(word, **kwargs)  # noqa: E501
-        else:
-            (data) = self.get_word_substitutions_with_http_info(word, **kwargs)  # noqa: E501
-            return data
-
-    def get_word_substitutions_with_http_info(self, word, **kwargs):  # noqa: E501
-        """get_word_substitutions  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_substitutions_with_http_info(word, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str word: (required)
+        :param str word: 
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -670,18 +1810,14 @@ class SynonymsApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'word' is set
-        if ('word' not in params or
-                params['word'] is None):
-            raise ValueError("Missing the required parameter `word` when calling `get_word_substitutions`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'word' in params:
-            path_params['word'] = params['word']  # noqa: E501
 
         query_params = []
+        if 'word' in params:
+            query_params.append(('word', params['word']))  # noqa: E501
 
         header_params = {}
 
@@ -701,7 +1837,7 @@ class SynonymsApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/synonyms/substitutions/{word}', 'GET',
+            '/synonyms/substitutions', 'GET',
             path_params,
             query_params,
             header_params,
@@ -716,37 +1852,37 @@ class SynonymsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def get_word_synonyms(self, word, **kwargs):  # noqa: E501
+    def get_word_synonyms(self, **kwargs):  # noqa: E501
         """get_word_synonyms  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_synonyms(word, async_req=True)
+        >>> thread = api.get_word_synonyms(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str word: (required)
+        :param str word: 
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.get_word_synonyms_with_http_info(word, **kwargs)  # noqa: E501
+            return self.get_word_synonyms_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.get_word_synonyms_with_http_info(word, **kwargs)  # noqa: E501
+            (data) = self.get_word_synonyms_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def get_word_synonyms_with_http_info(self, word, **kwargs):  # noqa: E501
+    def get_word_synonyms_with_http_info(self, **kwargs):  # noqa: E501
         """get_word_synonyms  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.get_word_synonyms_with_http_info(word, async_req=True)
+        >>> thread = api.get_word_synonyms_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param str word: (required)
+        :param str word: 
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -767,18 +1903,14 @@ class SynonymsApi(object):
                 )
             params[key] = val
         del params['kwargs']
-        # verify the required parameter 'word' is set
-        if ('word' not in params or
-                params['word'] is None):
-            raise ValueError("Missing the required parameter `word` when calling `get_word_synonyms`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'word' in params:
-            path_params['word'] = params['word']  # noqa: E501
 
         query_params = []
+        if 'word' in params:
+            query_params.append(('word', params['word']))  # noqa: E501
 
         header_params = {}
 
@@ -798,7 +1930,7 @@ class SynonymsApi(object):
         auth_settings = []  # noqa: E501
 
         return self.api_client.call_api(
-            '/synonyms/synonyms/{word}', 'GET',
+            '/synonyms/synonyms', 'GET',
             path_params,
             query_params,
             header_params,
