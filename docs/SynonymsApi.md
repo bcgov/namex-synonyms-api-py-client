@@ -799,7 +799,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_transform_text**
-> SynonymList get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
+> String get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
 
 
 
@@ -817,9 +817,10 @@ text = 'text_example' # str |  (optional)
 designation_all = 'designation_all_example' # str |  (optional)
 prefix_list = 'prefix_list_example' # str |  (optional)
 number_list = 'number_list_example' # str |  (optional)
+exceptions_ws = 'exceptions_ws_example' # str |  (optional)
 
 try:
-    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list)
+    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_transform_text: %s\n" % e)
@@ -833,10 +834,11 @@ Name | Type | Description  | Notes
  **designation_all** | **str**|  | [optional] 
  **prefix_list** | **str**|  | [optional] 
  **number_list** | **str**|  | [optional] 
+ **exceptions_ws** | **str**|  | [optional] 
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**String**](String.md)
 
 ### Authorization
 

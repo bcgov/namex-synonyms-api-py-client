@@ -505,12 +505,18 @@
           "description" : "",
           "required" : false,
           "type" : "string"
+        }, {
+          "name" : "exceptions_ws",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
         } ],
         "responses" : {
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/String"
             }
           }
         }
@@ -548,6 +554,14 @@
           "items" : {
             "type" : "string"
           }
+        }
+      }
+    },
+    "String" : {
+      "type" : "object",
+      "properties" : {
+        "data" : {
+          "type" : "string"
         }
       }
     }
