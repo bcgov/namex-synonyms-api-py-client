@@ -12,6 +12,133 @@
         "tags" : [ "NameProcessing" ]
       }
     },
+    "/synonyms/all-any-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___all_any_designations",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/all-end-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___all_end_designations",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designated-any-all-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___designated_any_all_words",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "position_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designated-end-all-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___designated_end_all_words",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "position_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-all-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___designation_all_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-any-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___designation_all_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-end-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___designation_end_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
     "/synonyms/designations" : {
       "get" : {
         "responses" : {
@@ -33,6 +160,116 @@
         }, {
           "description" : "",
           "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-any-designation" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___entity_type_any_designation",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_any_designation_dict",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "all_designation_any_end_list",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-by-value" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___entity_type_by_value",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_dicts",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-end-designation" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___entity_type_end_designation",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_end_designation_dict",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "all_designation_any_end_list",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/misplaced-any-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___misplaced_any_designations",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation_any_entity_type",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/misplaced-end-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___misplaced_end_designations",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation_end_entity_type",
           "type" : "string",
           "in" : "query"
         } ],
