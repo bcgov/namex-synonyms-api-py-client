@@ -29,8 +29,80 @@ class TestSynonymsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_get_all_any_designations(self):
+        """Test case for get_all_any_designations
+
+        """
+        pass
+
+    def test_get_all_end_designations(self):
+        """Test case for get_all_end_designations
+
+        """
+        pass
+
+    def test_get_designated_any_all_words(self):
+        """Test case for get_designated_any_all_words
+
+        """
+        pass
+
+    def test_get_designated_end_all_words(self):
+        """Test case for get_designated_end_all_words
+
+        """
+        pass
+
+    def test_get_designation_all_in_name(self):
+        """Test case for get_designation_all_in_name
+
+        """
+        pass
+
+    def test_get_designation_any_in_name(self):
+        """Test case for get_designation_any_in_name
+
+        """
+        pass
+
+    def test_get_designation_end_in_name(self):
+        """Test case for get_designation_end_in_name
+
+        """
+        pass
+
     def test_get_designations(self):
         """Test case for get_designations
+
+        """
+        pass
+
+    def test_get_entity_type_any_designation(self):
+        """Test case for get_entity_type_any_designation
+
+        """
+        pass
+
+    def test_get_entity_type_by_value(self):
+        """Test case for get_entity_type_by_value
+
+        """
+        pass
+
+    def test_get_entity_type_end_designation(self):
+        """Test case for get_entity_type_end_designation
+
+        """
+        pass
+
+    def test_get_misplaced_any_designations(self):
+        """Test case for get_misplaced_any_designations
+
+        """
+        pass
+
+    def test_get_misplaced_end_designations(self):
+        """Test case for get_misplaced_end_designations
 
         """
         pass
@@ -47,6 +119,12 @@ class TestSynonymsApi(unittest.TestCase):
         """
         pass
 
+    def test_get_stop_words(self):
+        """Test case for get_stop_words
+
+        """
+        pass
+
     def test_get_synonyms(self):
         """Test case for get_synonyms
 
@@ -55,12 +133,6 @@ class TestSynonymsApi(unittest.TestCase):
 
     def test_get_transform_text(self):
         """Test case for get_transform_text
-
-        """
-        pass
-
-    def test_get_word_stops(self):
-        """Test case for get_word_stops
 
         """
         pass
