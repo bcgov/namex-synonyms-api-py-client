@@ -1667,7 +1667,8 @@ class SynonymsApi(object):
         :param str designation_all: 
         :param str prefix_list: 
         :param str number_list: 
-        :return: SynonymList
+        :param str exceptions_ws: 
+        :return: String
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1691,12 +1692,13 @@ class SynonymsApi(object):
         :param str designation_all: 
         :param str prefix_list: 
         :param str number_list: 
-        :return: SynonymList
+        :param str exceptions_ws: 
+        :return: String
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['text', 'designation_all', 'prefix_list', 'number_list']  # noqa: E501
+        all_params = ['text', 'designation_all', 'prefix_list', 'number_list', 'exceptions_ws']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1725,6 +1727,8 @@ class SynonymsApi(object):
             query_params.append(('prefix_list', params['prefix_list']))  # noqa: E501
         if 'number_list' in params:
             query_params.append(('number_list', params['number_list']))  # noqa: E501
+        if 'exceptions_ws' in params:
+            query_params.append(('exceptions_ws', params['exceptions_ws']))  # noqa: E501
 
         header_params = {}
 
@@ -1751,7 +1755,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SynonymList',  # noqa: E501
+            response_type='String',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
