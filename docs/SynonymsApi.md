@@ -238,8 +238,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_word_stops**
-> get_word_stops(word)
+# **get_transform_text**
+> String get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
 
 
 
@@ -253,10 +253,15 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.SynonymsApi()
-word = 'word_example' # str | 
+text = 'text_example' # str |  (optional)
+designation_all = 'designation_all_example' # str |  (optional)
+prefix_list = 'prefix_list_example' # str |  (optional)
+number_list = 'number_list_example' # str |  (optional)
+exceptions_ws = 'exceptions_ws_example' # str |  (optional)
 
 try:
-    api_instance.get_word_stops(word)
+    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
+    pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_word_stops: %s\n" % e)
 ```
@@ -265,11 +270,15 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **word** | **str**|  | 
+ **text** | **str**|  | [optional] 
+ **designation_all** | **str**|  | [optional] 
+ **prefix_list** | **str**|  | [optional] 
+ **number_list** | **str**|  | [optional] 
+ **exceptions_ws** | **str**|  | [optional] 
 
 ### Return type
 
-void (empty response body)
+[**String**](String.md)
 
 ### Authorization
 
