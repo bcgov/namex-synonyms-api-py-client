@@ -1,1 +1,2 @@
-# namex-synonyms-api-py-client
+# namex-synonyms-api-client-py
+Namex Synonyms API Client (Python)
