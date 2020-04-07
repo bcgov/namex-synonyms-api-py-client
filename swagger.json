@@ -40,7 +40,10 @@
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -52,7 +55,10 @@
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -82,7 +88,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -112,7 +121,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -130,7 +142,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -148,7 +163,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -166,7 +184,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -196,7 +217,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -220,7 +244,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -244,7 +271,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -268,7 +298,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -292,7 +325,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -316,7 +352,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -328,7 +367,10 @@
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -340,7 +382,10 @@
         "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -382,7 +427,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -400,7 +448,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -418,7 +469,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -454,7 +508,10 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "Success"
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
           }
         }
       }
@@ -482,7 +539,19 @@
       }
     }
   },
-  "definitions" : { },
+  "definitions" : {
+    "SynonymList" : {
+      "type" : "object",
+      "properties" : {
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  },
   "responses" : {
     "ParseError" : {
       "description" : "When a mask can't be parsed"

@@ -42,7 +42,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -62,7 +62,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -114,7 +114,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -131,7 +131,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -151,7 +151,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -203,7 +203,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -223,7 +223,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -246,7 +246,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -304,7 +304,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -324,7 +324,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -347,7 +347,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -405,7 +405,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -423,7 +423,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -444,7 +444,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -498,7 +498,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -516,7 +516,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -537,7 +537,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -591,7 +591,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -609,7 +609,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -630,7 +630,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str name: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -684,7 +684,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -704,7 +704,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -727,7 +727,7 @@ class SynonymsApi(object):
         :param str entity_type_code: 
         :param str position_code: 
         :param str lang: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -785,7 +785,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -804,7 +804,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_any_designation_dict: 
         :param str all_designation_any_end_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -826,7 +826,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_any_designation_dict: 
         :param str all_designation_any_end_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -882,7 +882,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -901,7 +901,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_type_dicts: 
         :param str designation: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -923,7 +923,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_type_dicts: 
         :param str designation: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -979,7 +979,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -998,7 +998,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_end_designation_dict: 
         :param str all_designation_any_end_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1020,7 +1020,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str entity_end_designation_dict: 
         :param str all_designation_any_end_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1076,7 +1076,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1095,7 +1095,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str name: 
         :param str designation_any_entity_type: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1117,7 +1117,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str name: 
         :param str designation_any_entity_type: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1173,7 +1173,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1192,7 +1192,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str name: 
         :param str designation_end_entity_type: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1214,7 +1214,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str name: 
         :param str designation_end_entity_type: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1270,7 +1270,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1287,7 +1287,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1307,7 +1307,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1359,7 +1359,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1376,7 +1376,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1396,7 +1396,7 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1448,7 +1448,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1466,7 +1466,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1487,7 +1487,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1541,7 +1541,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1667,7 +1667,7 @@ class SynonymsApi(object):
         :param str designation_all: 
         :param str prefix_list: 
         :param str number_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1691,7 +1691,7 @@ class SynonymsApi(object):
         :param str designation_all: 
         :param str prefix_list: 
         :param str number_list: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1751,7 +1751,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1769,7 +1769,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1790,7 +1790,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1844,7 +1844,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1862,7 +1862,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1883,7 +1883,7 @@ class SynonymsApi(object):
 
         :param async_req bool
         :param str word: 
-        :return: None
+        :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1937,7 +1937,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type=None,  # noqa: E501
+            response_type='SynonymList',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
