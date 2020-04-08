@@ -15,6 +15,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from swagger_client.models.dictionary_list import DictionaryList
 from swagger_client.models.string import String
-from swagger_client.models.synonym_data import SynonymData
+from swagger_client.models.synonym_dictionary_list import SynonymDictionaryList
 from swagger_client.models.synonym_list import SynonymList
