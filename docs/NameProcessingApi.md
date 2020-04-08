@@ -1,6 +1,6 @@
 # swagger_client.NameProcessingApi
 
-All URIs are relative to *http://localhost:5002/api/v1*
+All URIs are relative to *http://http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
