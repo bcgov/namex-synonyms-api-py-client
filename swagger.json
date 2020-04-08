@@ -42,7 +42,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/SynonymData"
             }
           }
         }
@@ -57,7 +57,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/SynonymData"
             }
           }
         }
@@ -273,7 +273,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/SynonymData"
             }
           }
         }
@@ -300,7 +300,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/SynonymData"
             }
           }
         }
