@@ -24,6 +24,7 @@ from swagger_client.api.synonyms_api import SynonymsApi
 from swagger_client.api_client import ApiClient
 from swagger_client.configuration import Configuration
 # import models into sdk package
+from swagger_client.models.dictionary_list import DictionaryList
 from swagger_client.models.string import String
-from swagger_client.models.synonym_data import SynonymData
+from swagger_client.models.synonym_dictionary_list import SynonymDictionaryList
 from swagger_client.models.synonym_list import SynonymList
