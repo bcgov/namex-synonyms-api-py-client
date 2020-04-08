@@ -5,7 +5,7 @@
     "version" : "1.0.0",
     "title" : "Synonyms API"
   },
-  "host" : "localhost:5002",
+  "host" : "http://solr-synonyms-api.servicebc-ne-dev.svc:8080",
   "basePath" : "/api/v1",
   "tags" : [ {
     "name" : "Probes",
