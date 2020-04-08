@@ -16,12 +16,12 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.string import String  # noqa: E501
+from swagger_client.models.dictionary_list import DictionaryList  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestString(unittest.TestCase):
-    """String unit test stubs"""
+class TestDictionaryList(unittest.TestCase):
+    """DictionaryList unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,10 +29,10 @@ class TestString(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testString(self):
-        """Test String"""
+    def testDictionaryList(self):
+        """Test DictionaryList"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.string.String()  # noqa: E501
+        # model = swagger_client.models.dictionary_list.DictionaryList()  # noqa: E501
         pass
 
 
