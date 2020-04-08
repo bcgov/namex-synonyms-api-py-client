@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_all_any_designations**](SynonymsApi.md#get_all_any_designations) | **GET** /synonyms/all-any-designations | 
 [**get_all_end_designations**](SynonymsApi.md#get_all_end_designations) | **GET** /synonyms/all-end-designations | 
+[**get_all_substitutions_synonyms**](SynonymsApi.md#get_all_substitutions_synonyms) | **GET** /synonyms/all-substitutions-synonyms | 
 [**get_designated_any_all_words**](SynonymsApi.md#get_designated_any_all_words) | **GET** /synonyms/designated-any-all-words | 
 [**get_designated_end_all_words**](SynonymsApi.md#get_designated_end_all_words) | **GET** /synonyms/designated-end-all-words | 
 [**get_designation_all_in_name**](SynonymsApi.md#get_designation_all_in_name) | **GET** /synonyms/designation-all-in-name | 
@@ -93,6 +94,53 @@ except ApiException as e:
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**SynonymList**](SynonymList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_all_substitutions_synonyms**
+> SynonymList get_all_substitutions_synonyms(words=words, words_are_distinctive=words_are_distinctive)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.SynonymsApi()
+words = 'words_example' # str |  (optional)
+words_are_distinctive = 'words_are_distinctive_example' # str |  (optional)
+
+try:
+    api_response = api_instance.get_all_substitutions_synonyms(words=words, words_are_distinctive=words_are_distinctive)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SynonymsApi->get_all_substitutions_synonyms: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **words** | **str**|  | [optional] 
+ **words_are_distinctive** | **str**|  | [optional] 
 
 ### Return type
 
