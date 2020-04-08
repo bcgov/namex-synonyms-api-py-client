@@ -1,6 +1,8 @@
 {
   "swagger" : "2.0",
-  "chemes" : [ "http", "https" ],
+  "host" : "virtserver.swaggerhub.com",
+  "schemes" : [ "https" ],
+  "basePath" : "/lucaslopatka/bcgov-namex-synonyms-api/1.0.0",
   "paths" : {
     "/name-processing/" : {
       "get" : {
@@ -579,8 +581,5 @@
     "MaskError" : {
       "description" : "When any error occurs on mask"
     }
-  },
-  "host" : "virtserver.swaggerhub.com",
-  "basePath" : "/lucaslopatka/bcgov-namex-synonyms-api/1.0.0",
-  "schemes" : [ "https" ]
+  }
 }
