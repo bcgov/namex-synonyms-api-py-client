@@ -222,7 +222,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str words: 
         :param str words_are_distinctive: 
-        :return: SynonymList
+        :return: SynonymData
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -244,7 +244,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str words: 
         :param str words_are_distinctive: 
-        :return: SynonymList
+        :return: SynonymData
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -300,7 +300,7 @@ class SynonymsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='SynonymList',  # noqa: E501
+            response_type='SynonymData',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
