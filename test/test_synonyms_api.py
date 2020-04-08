@@ -95,6 +95,12 @@ class TestSynonymsApi(unittest.TestCase):
         """
         pass
 
+    def test_get_exception_regex(self):
+        """Test case for get_exception_regex
+
+        """
+        pass
+
     def test_get_misplaced_any_designations(self):
         """Test case for get_misplaced_any_designations
 
