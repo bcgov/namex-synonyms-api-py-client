@@ -1,12 +1,545 @@
 {
   "swagger" : "2.0",
-  "info" : {
-    "description" : "Retrieves the sets of synonyms for a given word.",
-    "version" : "1.0",
-    "title" : "Synonyms API"
+  "paths" : {
+    "/name-processing/" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___word_classification",
+        "tags" : [ "NameProcessing" ]
+      }
+    },
+    "/synonyms/all-any-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___all_any_designations",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/all-end-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___all_end_designations",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/all-substitutions-synonyms" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___all_substitutions_synonyms",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "words",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "words_are_distinctive",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designated-any-all-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designated_any_all_words",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "position_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designated-end-all-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designated_end_all_words",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "position_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-all-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designation_all_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-any-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designation_any_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designation-end-in-name" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designation_end_in_name",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___designations",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "position_code",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "lang",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-any-designation" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___entity_type_any_designation",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_any_designation_dict",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "all_designation_any_end_list",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-by-value" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___entity_type_by_value",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_type_dicts",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/entity-type-end-designation" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___entity_type_end_designation",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "entity_end_designation_dict",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "all_designation_any_end_list",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/exception-regex" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___exception_regex",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "text",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/misplaced-any-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___misplaced_any_designations",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation_any_entity_type",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/misplaced-end-designations" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___misplaced_end_designations",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "name",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation_end_entity_type",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/number-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___number_words",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/prefixes" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___prefixes",
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/probes/liveness" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___liveness",
+        "tags" : [ "Probes" ]
+      }
+    },
+    "/synonyms/probes/readiness" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___readiness",
+        "tags" : [ "Probes" ]
+      }
+    },
+    "/synonyms/stop-words" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___stop_words",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "word",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/substitutions" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___word_substitutions",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "word",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/synonyms" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        },
+        "operationId" : "get___word_synonyms",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "word",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/transform-text" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/String"
+            }
+          }
+        },
+        "operationId" : "get___transform_text",
+        "parameters" : [ {
+          "description" : "",
+          "name" : "text",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "designation_all",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "prefix_list",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "number_list",
+          "type" : "string",
+          "in" : "query"
+        }, {
+          "description" : "",
+          "name" : "exceptions_ws",
+          "type" : "string",
+          "in" : "query"
+        } ],
+        "tags" : [ "Synonyms" ]
+      }
+    },
+    "/synonyms/{col}/{term}" : {
+      "parameters" : [ {
+        "name" : "col",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      }, {
+        "name" : "term",
+        "in" : "path",
+        "required" : true,
+        "type" : "string"
+      } ],
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        },
+        "operationId" : "get___synonyms",
+        "tags" : [ "Synonyms" ]
+      }
+    }
   },
-  "host" : "localhost:5002",
-  "basePath" : "/api/v1",
+  "info" : {
+    "title" : "Synonyms API",
+    "version" : "1.0.0",
+    "description" : "Retrieves the sets of synonyms for a given word."
+  },
+  "produces" : [ "application/json" ],
+  "consumes" : [ "application/json" ],
   "tags" : [ {
     "name" : "Probes",
     "description" : "Operations probes to determine liveness and readiness"
@@ -17,558 +550,8 @@
     "name" : "NameProcessing",
     "description" : "Name Processing Service - Used by Namex API"
   } ],
-  "schemes" : [ "http", "https" ],
-  "consumes" : [ "application/json" ],
-  "produces" : [ "application/json" ],
-  "paths" : {
-    "/name-processing/" : {
-      "get" : {
-        "tags" : [ "NameProcessing" ],
-        "operationId" : "get___word_classification",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        }
-      }
-    },
-    "/synonyms/all-any-designations" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___all_any_designations",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/all-end-designations" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___all_end_designations",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designated-any-all-words" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designated_any_all_words",
-        "parameters" : [ {
-          "name" : "entity_type_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "position_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "lang",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designated-end-all-words" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designated_end_all_words",
-        "parameters" : [ {
-          "name" : "entity_type_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "position_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "lang",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designation-all-in-name" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designation_all_in_name",
-        "parameters" : [ {
-          "name" : "name",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designation-any-in-name" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designation_any_in_name",
-        "parameters" : [ {
-          "name" : "name",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designation-end-in-name" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designation_end_in_name",
-        "parameters" : [ {
-          "name" : "name",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/designations" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___designations",
-        "parameters" : [ {
-          "name" : "entity_type_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "position_code",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "lang",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/entity-type-any-designation" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___entity_type_any_designation",
-        "parameters" : [ {
-          "name" : "entity_any_designation_dict",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "all_designation_any_end_list",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/entity-type-by-value" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___entity_type_by_value",
-        "parameters" : [ {
-          "name" : "entity_type_dicts",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "designation",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/entity-type-end-designation" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___entity_type_end_designation",
-        "parameters" : [ {
-          "name" : "entity_end_designation_dict",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "all_designation_any_end_list",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/exception-regex" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___exception_regex",
-        "parameters" : [ {
-          "name" : "text",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/misplaced-any-designations" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___misplaced_any_designations",
-        "parameters" : [ {
-          "name" : "name",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "designation_any_entity_type",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/misplaced-end-designations" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___misplaced_end_designations",
-        "parameters" : [ {
-          "name" : "name",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "designation_end_entity_type",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/number-words" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___number_words",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/prefixes" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___prefixes",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/probes/liveness" : {
-      "get" : {
-        "tags" : [ "Probes" ],
-        "operationId" : "get___liveness",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        }
-      }
-    },
-    "/synonyms/probes/readiness" : {
-      "get" : {
-        "tags" : [ "Probes" ],
-        "operationId" : "get___readiness",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        }
-      }
-    },
-    "/synonyms/stop-words" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___stop_words",
-        "parameters" : [ {
-          "name" : "word",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/substitutions" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___word_substitutions",
-        "parameters" : [ {
-          "name" : "word",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/synonyms" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___word_synonyms",
-        "parameters" : [ {
-          "name" : "word",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/SynonymList"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/transform-text" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___transform_text",
-        "parameters" : [ {
-          "name" : "text",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "designation_all",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "prefix_list",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "number_list",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "exceptions_ws",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/String"
-            }
-          }
-        }
-      }
-    },
-    "/synonyms/{col}/{term}" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___synonyms",
-        "parameters" : [ {
-          "name" : "col",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "term",
-          "in" : "path",
-          "required" : true,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "Success"
-          }
-        }
-      }
-    }
-  },
   "definitions" : {
     "SynonymList" : {
-      "type" : "object",
       "properties" : {
         "data" : {
           "type" : "array",
@@ -576,15 +559,16 @@
             "type" : "string"
           }
         }
-      }
+      },
+      "type" : "object"
     },
     "String" : {
-      "type" : "object",
       "properties" : {
         "data" : {
           "type" : "string"
         }
-      }
+      },
+      "type" : "object"
     }
   },
   "responses" : {
@@ -594,5 +578,8 @@
     "MaskError" : {
       "description" : "When any error occurs on mask"
     }
-  }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/lucaslopatka/bcgov-namex-synonyms-api/1.0.0",
+  "schemes" : [ "https", "http" ]
 }
