@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**get_entity_type_any_designation**](SynonymsApi.md#get_entity_type_any_designation) | **GET** /synonyms/entity-type-any-designation | 
 [**get_entity_type_by_value**](SynonymsApi.md#get_entity_type_by_value) | **GET** /synonyms/entity-type-by-value | 
 [**get_entity_type_end_designation**](SynonymsApi.md#get_entity_type_end_designation) | **GET** /synonyms/entity-type-end-designation | 
+[**get_exception_regex**](SynonymsApi.md#get_exception_regex) | **GET** /synonyms/exception-regex | 
 [**get_misplaced_any_designations**](SynonymsApi.md#get_misplaced_any_designations) | **GET** /synonyms/misplaced-any-designations | 
 [**get_misplaced_end_designations**](SynonymsApi.md#get_misplaced_end_designations) | **GET** /synonyms/misplaced-end-designations | 
 [**get_number_words**](SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
@@ -515,6 +516,51 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **entity_end_designation_dict** | **str**|  | [optional] 
  **all_designation_any_end_list** | **str**|  | [optional] 
+
+### Return type
+
+[**SynonymList**](SynonymList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_exception_regex**
+> SynonymList get_exception_regex(text=text)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.SynonymsApi()
+text = 'text_example' # str |  (optional)
+
+try:
+    api_response = api_instance.get_exception_regex(text=text)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SynonymsApi->get_exception_regex: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **text** | **str**|  | [optional] 
 
 ### Return type
 

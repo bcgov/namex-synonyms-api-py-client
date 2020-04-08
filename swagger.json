@@ -306,6 +306,27 @@
         }
       }
     },
+    "/synonyms/exception-regex" : {
+      "get" : {
+        "tags" : [ "Synonyms" ],
+        "operationId" : "get___exception_regex",
+        "parameters" : [ {
+          "name" : "text",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        }
+      }
+    },
     "/synonyms/misplaced-any-designations" : {
       "get" : {
         "tags" : [ "Synonyms" ],
