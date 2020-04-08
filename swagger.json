@@ -68,6 +68,33 @@
         "tags" : [ "Synonyms" ]
       }
     },
+    "/synonyms/all-substitutions-synonyms" : {
+      "get" : {
+        "tags" : [ "Synonyms" ],
+        "operationId" : "get___all_substitutions_synonyms",
+        "parameters" : [ {
+          "name" : "words",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "words_are_distinctive",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        }
+      }
+    },
     "/synonyms/designated-any-all-words" : {
       "get" : {
         "responses" : {
