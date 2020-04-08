@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 
 # **get_all_any_designations**
-> SynonymList get_all_any_designations()
+> SynonymData get_all_any_designations()
 
 
 
@@ -56,7 +56,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**SynonymData**](SynonymData.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_end_designations**
-> SynonymList get_all_end_designations()
+> SynonymData get_all_end_designations()
 
 
 
@@ -97,7 +97,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**SynonymData**](SynonymData.md)
 
 ### Authorization
 
@@ -440,7 +440,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entity_type_any_designation**
-> SynonymList get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
+> SynonymData get_entity_type_any_designation(entity_any_designation_dict=entity_any_designation_dict, all_designation_any_end_list=all_designation_any_end_list)
 
 
 
@@ -473,7 +473,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**SynonymData**](SynonymData.md)
 
 ### Authorization
 
@@ -487,7 +487,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_entity_type_by_value**
-> SynonymList get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
+> SynonymData get_entity_type_by_value(entity_type_dicts=entity_type_dicts, designation=designation)
 
 
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**SynonymData**](SynonymData.md)
 
 ### Authorization
 

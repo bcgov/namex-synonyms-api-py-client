@@ -25,7 +25,7 @@ from pprint import pprint
 api_instance = swagger_client.ProbesApi()
 
 try:
-    api_instance.get_liveness()
+    api_instance.get_liveness()swagger.json
 except ApiException as e:
     print("Exception when calling ProbesApi->get_liveness: %s\n" % e)
 ```
