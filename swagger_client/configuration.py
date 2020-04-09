@@ -40,7 +40,7 @@ class Configuration(object):
             return
 
         # Default Base url
-        self.host = "http://http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1"
+        self.host = "http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1"
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
