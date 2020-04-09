@@ -107,6 +107,12 @@ class TestSynonymsApi(unittest.TestCase):
         """
         pass
 
+    def test_get_incorrect_designation_end_in_name(self):
+        """Test case for get_incorrect_designation_end_in_name
+
+        """
+        pass
+
     def test_get_misplaced_any_designations(self):
         """Test case for get_misplaced_any_designations
 

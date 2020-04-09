@@ -354,6 +354,27 @@
         }
       }
     },
+    "/synonyms/incorrect-designation-end-in-name" : {
+      "get" : {
+        "tags" : [ "Synonyms" ],
+        "operationId" : "get___incorrect_designation_end_in_name",
+        "parameters" : [ {
+          "name" : "name",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        }
+      }
+    },
     "/synonyms/misplaced-any-designations" : {
       "get" : {
         "tags" : [ "Synonyms" ],
