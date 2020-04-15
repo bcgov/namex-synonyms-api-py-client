@@ -1,6 +1,6 @@
 # swagger_client.SynonymsApi
 
-All URIs are relative to *http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
+All URIs are relative to *https://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -627,7 +627,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_incorrect_designation_end_in_name**
-> SynonymList get_incorrect_designation_end_in_name(name=name)
+> SynonymList get_incorrect_designation_end_in_name(tokenized_name=tokenized_name, designation_end_list=designation_end_list)
 
 
 
@@ -641,10 +641,11 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = swagger_client.SynonymsApi()
-name = 'name_example' # str |  (optional)
+tokenized_name = 'tokenized_name_example' # str |  (optional)
+designation_end_list = 'designation_end_list_example' # str |  (optional)
 
 try:
-    api_response = api_instance.get_incorrect_designation_end_in_name(name=name)
+    api_response = api_instance.get_incorrect_designation_end_in_name(tokenized_name=tokenized_name, designation_end_list=designation_end_list)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_incorrect_designation_end_in_name: %s\n" % e)
@@ -654,7 +655,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **str**|  | [optional] 
+ **tokenized_name** | **str**|  | [optional] 
+ **designation_end_list** | **str**|  | [optional] 
 
 ### Return type
 
@@ -939,7 +941,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_transform_text**
-> String get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
+> String get_transform_text(text=text, designation_all=designation_all, number_list=number_list, exceptions_ws=exceptions_ws)
 
 
 
@@ -955,12 +957,11 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 text = 'text_example' # str |  (optional)
 designation_all = 'designation_all_example' # str |  (optional)
-prefix_list = 'prefix_list_example' # str |  (optional)
 number_list = 'number_list_example' # str |  (optional)
 exceptions_ws = 'exceptions_ws_example' # str |  (optional)
 
 try:
-    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, prefix_list=prefix_list, number_list=number_list, exceptions_ws=exceptions_ws)
+    api_response = api_instance.get_transform_text(text=text, designation_all=designation_all, number_list=number_list, exceptions_ws=exceptions_ws)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_transform_text: %s\n" % e)
@@ -972,7 +973,6 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **text** | **str**|  | [optional] 
  **designation_all** | **str**|  | [optional] 
- **prefix_list** | **str**|  | [optional] 
  **number_list** | **str**|  | [optional] 
  **exceptions_ws** | **str**|  | [optional] 
 

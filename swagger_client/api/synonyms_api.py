@@ -1283,7 +1283,8 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str name: 
+        :param str tokenized_name: 
+        :param str designation_end_list: 
         :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1304,13 +1305,14 @@ class SynonymsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str name: 
+        :param str tokenized_name: 
+        :param str designation_end_list: 
         :return: SynonymList
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['name']  # noqa: E501
+        all_params = ['tokenized_name', 'designation_end_list']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1331,8 +1333,10 @@ class SynonymsApi(object):
         path_params = {}
 
         query_params = []
-        if 'name' in params:
-            query_params.append(('name', params['name']))  # noqa: E501
+        if 'tokenized_name' in params:
+            query_params.append(('tokenized_name', params['tokenized_name']))  # noqa: E501
+        if 'designation_end_list' in params:
+            query_params.append(('designation_end_list', params['designation_end_list']))  # noqa: E501
 
         header_params = {}
 
@@ -1948,7 +1952,6 @@ class SynonymsApi(object):
         :param async_req bool
         :param str text: 
         :param str designation_all: 
-        :param str prefix_list: 
         :param str number_list: 
         :param str exceptions_ws: 
         :return: String
@@ -1973,7 +1976,6 @@ class SynonymsApi(object):
         :param async_req bool
         :param str text: 
         :param str designation_all: 
-        :param str prefix_list: 
         :param str number_list: 
         :param str exceptions_ws: 
         :return: String
@@ -1981,7 +1983,7 @@ class SynonymsApi(object):
                  returns the request thread.
         """
 
-        all_params = ['text', 'designation_all', 'prefix_list', 'number_list', 'exceptions_ws']  # noqa: E501
+        all_params = ['text', 'designation_all', 'number_list', 'exceptions_ws']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2006,8 +2008,6 @@ class SynonymsApi(object):
             query_params.append(('text', params['text']))  # noqa: E501
         if 'designation_all' in params:
             query_params.append(('designation_all', params['designation_all']))  # noqa: E501
-        if 'prefix_list' in params:
-            query_params.append(('prefix_list', params['prefix_list']))  # noqa: E501
         if 'number_list' in params:
             query_params.append(('number_list', params['number_list']))  # noqa: E501
         if 'exceptions_ws' in params:
