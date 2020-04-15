@@ -17,7 +17,6 @@
     "name" : "NameProcessing",
     "description" : "Name Processing Service - Used by Namex API"
   } ],
-  "schemes" : [ "http", "https" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
@@ -591,12 +590,6 @@
           "type" : "string"
         }, {
           "name" : "designation_all",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "prefix_list",
           "in" : "query",
           "description" : "",
           "required" : false,
