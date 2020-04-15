@@ -1,6 +1,6 @@
 # swagger_client.SynonymsApi
 
-All URIs are relative to *https://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
+All URIs are relative to *http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
