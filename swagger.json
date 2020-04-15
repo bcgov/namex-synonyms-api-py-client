@@ -17,6 +17,7 @@
     "name" : "NameProcessing",
     "description" : "Name Processing Service - Used by Namex API"
   } ],
+  "schemes" : [ "http", "https" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
