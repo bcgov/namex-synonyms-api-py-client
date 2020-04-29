@@ -489,6 +489,33 @@
         }
       }
     },
+    "/synonyms/regex-prefixes" : {
+      "get" : {
+        "tags" : [ "Synonyms" ],
+        "operationId" : "get___regex_prefixes",
+        "parameters" : [ {
+          "name" : "text",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "prefix_list",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/SynonymList"
+            }
+          }
+        }
+      }
+    },
     "/synonyms/stop-words" : {
       "get" : {
         "tags" : [ "Synonyms" ],
