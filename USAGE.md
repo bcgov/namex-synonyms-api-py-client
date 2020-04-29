@@ -20,11 +20,11 @@ automated, using the swagger-codegen project to generate our code instead of Swa
     1. Stop the API first if it's already started.
     2. Click the link in the console output to the Swagger Docs for the API. 
     
-    ```http://localhost:your-port>```
+    ```http://localhost:<your-port>```
 
 3. Click on the link at the left-up corner under Synonyms API header pointing to the JSON spec for the API.
     
-    http://localhost:5002/api/v1/swagger.json
+    http://localhost:<your-port>/api/v1/swagger.json
     
 4. Open up SwaggerHub in your browser and select your API project.
     
@@ -57,8 +57,9 @@ automated, using the swagger-codegen project to generate our code instead of Swa
 	2. From ```python-client-generated``` copy everything except:
 	  
 	  ```
+	  .git (dir)
 	  .gitignore
-	  .swagger-codegen
+	  .swagger-codegen (dir)
 	  .travis.yml
 	  .swagger-codegen-ignore
 	  ```
