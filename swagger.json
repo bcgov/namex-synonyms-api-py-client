@@ -2,7 +2,7 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "Retrieves the sets of synonyms for a given word.",
-    "version" : "1.0.0",
+    "version" : "1.0",
     "title" : "Synonyms API"
   },
   "host" : "solr-synonyms-api.servicebc-ne-dev.svc:8080",
@@ -500,7 +500,7 @@
           "required" : false,
           "type" : "string"
         }, {
-          "name" : "prefix_list",
+          "name" : "prefixes_str",
           "in" : "query",
           "description" : "",
           "required" : false,
