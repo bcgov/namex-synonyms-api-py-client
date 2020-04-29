@@ -510,7 +510,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/SynonymList"
+              "$ref" : "#/definitions/String"
             }
           }
         }

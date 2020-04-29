@@ -851,7 +851,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_regex_prefixes**
-> SynonymList get_regex_prefixes(text=text, prefix_list=prefix_list)
+> String get_regex_prefixes(text=text, prefix_list=prefix_list)
 
 
 
@@ -884,7 +884,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SynonymList**](SynonymList.md)
+[**String**](String.md)
 
 ### Authorization
 
