@@ -22,6 +22,7 @@ Method | HTTP request | Description
 [**get_misplaced_end_designations**](SynonymsApi.md#get_misplaced_end_designations) | **GET** /synonyms/misplaced-end-designations | 
 [**get_number_words**](SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
 [**get_prefixes**](SynonymsApi.md#get_prefixes) | **GET** /synonyms/prefixes | 
+[**get_regex_prefixes**](SynonymsApi.md#get_regex_prefixes) | **GET** /synonyms/regex-prefixes | 
 [**get_stop_words**](SynonymsApi.md#get_stop_words) | **GET** /synonyms/stop-words | 
 [**get_synonyms**](SynonymsApi.md#get_synonyms) | **GET** /synonyms/{col}/{term} | 
 [**get_transform_text**](SynonymsApi.md#get_transform_text) | **GET** /synonyms/transform-text | 
@@ -833,6 +834,53 @@ except ApiException as e:
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**SynonymList**](SynonymList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_regex_prefixes**
+> SynonymList get_regex_prefixes(text=text, prefix_list=prefix_list)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.SynonymsApi()
+text = 'text_example' # str |  (optional)
+prefix_list = 'prefix_list_example' # str |  (optional)
+
+try:
+    api_response = api_instance.get_regex_prefixes(text=text, prefix_list=prefix_list)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SynonymsApi->get_regex_prefixes: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **text** | **str**|  | [optional] 
+ **prefix_list** | **str**|  | [optional] 
 
 ### Return type
 
