@@ -47,6 +47,18 @@ class TestSynonymsApi(unittest.TestCase):
         """
         pass
 
+    def test_get_regex_prefixes(self):
+        """Test case for get_regex_prefixes
+
+        """
+        pass
+
+    def test_get_stop_words(self):
+        """Test case for get_stop_words
+
+        """
+        pass
+
     def test_get_synonyms(self):
         """Test case for get_synonyms
 

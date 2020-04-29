@@ -500,7 +500,7 @@
           "required" : false,
           "type" : "string"
         }, {
-          "name" : "prefixes_str",
+          "name" : "prefix_list",
           "in" : "query",
           "description" : "",
           "required" : false,
@@ -510,7 +510,7 @@
           "200" : {
             "description" : "SynonymsApi",
             "schema" : {
-              "$ref" : "#/definitions/String"
+              "$ref" : "#/definitions/SynonymList"
             }
           }
         }
