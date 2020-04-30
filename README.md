@@ -88,6 +88,7 @@ Class | Method | HTTP request | Description
 *SynonymsApi* | [**get_misplaced_end_designations**](docs/SynonymsApi.md#get_misplaced_end_designations) | **GET** /synonyms/misplaced-end-designations | 
 *SynonymsApi* | [**get_number_words**](docs/SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
 *SynonymsApi* | [**get_prefixes**](docs/SynonymsApi.md#get_prefixes) | **GET** /synonyms/prefixes | 
+*SynonymsApi* | [**get_regex_prefixes**](docs/SynonymsApi.md#get_regex_prefixes) | **GET** /synonyms/regex-prefixes | 
 *SynonymsApi* | [**get_stop_words**](docs/SynonymsApi.md#get_stop_words) | **GET** /synonyms/stop-words | 
 *SynonymsApi* | [**get_synonyms**](docs/SynonymsApi.md#get_synonyms) | **GET** /synonyms/{col}/{term} | 
 *SynonymsApi* | [**get_transform_text**](docs/SynonymsApi.md#get_transform_text) | **GET** /synonyms/transform-text | 
