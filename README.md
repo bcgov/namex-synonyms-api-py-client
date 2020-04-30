@@ -63,7 +63,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://localhost:5002/api/v1*
+All URIs are relative to *http://solr-synonyms-api.servicebc-ne-dev.svc:8080/api/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -72,6 +72,7 @@ Class | Method | HTTP request | Description
 *ProbesApi* | [**get_readiness**](docs/ProbesApi.md#get_readiness) | **GET** /synonyms/probes/readiness | 
 *SynonymsApi* | [**get_all_any_designations**](docs/SynonymsApi.md#get_all_any_designations) | **GET** /synonyms/all-any-designations | 
 *SynonymsApi* | [**get_all_end_designations**](docs/SynonymsApi.md#get_all_end_designations) | **GET** /synonyms/all-end-designations | 
+*SynonymsApi* | [**get_all_substitutions_synonyms**](docs/SynonymsApi.md#get_all_substitutions_synonyms) | **GET** /synonyms/all-substitutions-synonyms | 
 *SynonymsApi* | [**get_designated_any_all_words**](docs/SynonymsApi.md#get_designated_any_all_words) | **GET** /synonyms/designated-any-all-words | 
 *SynonymsApi* | [**get_designated_end_all_words**](docs/SynonymsApi.md#get_designated_end_all_words) | **GET** /synonyms/designated-end-all-words | 
 *SynonymsApi* | [**get_designation_all_in_name**](docs/SynonymsApi.md#get_designation_all_in_name) | **GET** /synonyms/designation-all-in-name | 
@@ -81,10 +82,13 @@ Class | Method | HTTP request | Description
 *SynonymsApi* | [**get_entity_type_any_designation**](docs/SynonymsApi.md#get_entity_type_any_designation) | **GET** /synonyms/entity-type-any-designation | 
 *SynonymsApi* | [**get_entity_type_by_value**](docs/SynonymsApi.md#get_entity_type_by_value) | **GET** /synonyms/entity-type-by-value | 
 *SynonymsApi* | [**get_entity_type_end_designation**](docs/SynonymsApi.md#get_entity_type_end_designation) | **GET** /synonyms/entity-type-end-designation | 
+*SynonymsApi* | [**get_exception_regex**](docs/SynonymsApi.md#get_exception_regex) | **GET** /synonyms/exception-regex | 
+*SynonymsApi* | [**get_incorrect_designation_end_in_name**](docs/SynonymsApi.md#get_incorrect_designation_end_in_name) | **GET** /synonyms/incorrect-designation-end-in-name | 
 *SynonymsApi* | [**get_misplaced_any_designations**](docs/SynonymsApi.md#get_misplaced_any_designations) | **GET** /synonyms/misplaced-any-designations | 
 *SynonymsApi* | [**get_misplaced_end_designations**](docs/SynonymsApi.md#get_misplaced_end_designations) | **GET** /synonyms/misplaced-end-designations | 
 *SynonymsApi* | [**get_number_words**](docs/SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
 *SynonymsApi* | [**get_prefixes**](docs/SynonymsApi.md#get_prefixes) | **GET** /synonyms/prefixes | 
+*SynonymsApi* | [**get_regex_prefixes**](docs/SynonymsApi.md#get_regex_prefixes) | **GET** /synonyms/regex-prefixes | 
 *SynonymsApi* | [**get_stop_words**](docs/SynonymsApi.md#get_stop_words) | **GET** /synonyms/stop-words | 
 *SynonymsApi* | [**get_synonyms**](docs/SynonymsApi.md#get_synonyms) | **GET** /synonyms/{col}/{term} | 
 *SynonymsApi* | [**get_transform_text**](docs/SynonymsApi.md#get_transform_text) | **GET** /synonyms/transform-text | 
@@ -94,7 +98,9 @@ Class | Method | HTTP request | Description
 
 ## Documentation For Models
 
+ - [DictionaryList](docs/DictionaryList.md)
  - [String](docs/String.md)
+ - [SynonymDictionaryList](docs/SynonymDictionaryList.md)
  - [SynonymList](docs/SynonymList.md)
 
 
