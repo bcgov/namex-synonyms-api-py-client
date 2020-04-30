@@ -5,7 +5,7 @@
     "version" : "1.0.0",
     "title" : "Synonyms API"
   },
-  "host" : "localhost:8080",
+  "host" : "solr-synonyms-api.servicebc-ne-dev.svc:8080",
   "basePath" : "/api/v1",
   "tags" : [ {
     "name" : "Probes",
@@ -485,6 +485,33 @@
         "responses" : {
           "200" : {
             "description" : "Success"
+          }
+        }
+      }
+    },
+    "/synonyms/regex-prefixes" : {
+      "get" : {
+        "tags" : [ "Synonyms" ],
+        "operationId" : "get___regex_prefixes",
+        "parameters" : [ {
+          "name" : "text",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "prefixes_str",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "SynonymsApi",
+            "schema" : {
+              "$ref" : "#/definitions/String"
+            }
           }
         }
       }
