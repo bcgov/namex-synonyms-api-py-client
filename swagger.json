@@ -2,10 +2,10 @@
   "swagger" : "2.0",
   "info" : {
     "description" : "Retrieves the sets of synonyms for a given word.",
-    "version" : "1.0",
+    "version" : "1.0.0",
     "title" : "Synonyms API"
   },
-  "host" : "localhost:8080",
+  "host" : "solr-synonyms-api.servicebc-ne-dev.svc:8080",
   "basePath" : "/api/v1",
   "tags" : [ {
     "name" : "Probes",
@@ -17,6 +17,7 @@
     "name" : "NameProcessing",
     "description" : "Name Processing Service - Used by Namex API"
   } ],
+  "schemes" : [ "http", "https" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
@@ -488,33 +489,6 @@
         }
       }
     },
-    "/synonyms/regex-prefixes" : {
-      "get" : {
-        "tags" : [ "Synonyms" ],
-        "operationId" : "get___regex_prefixes",
-        "parameters" : [ {
-          "name" : "text",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        }, {
-          "name" : "prefixes_str",
-          "in" : "query",
-          "description" : "",
-          "required" : false,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "SynonymsApi",
-            "schema" : {
-              "$ref" : "#/definitions/String"
-            }
-          }
-        }
-      }
-    },
     "/synonyms/stop-words" : {
       "get" : {
         "tags" : [ "Synonyms" ],
@@ -595,6 +569,12 @@
           "required" : false,
           "type" : "string"
         }, {
+          "name" : "prefix_list",
+          "in" : "query",
+          "description" : "",
+          "required" : false,
+          "type" : "string"
+        }, {
           "name" : "number_list",
           "in" : "query",
           "description" : "",
@@ -645,6 +625,31 @@
       "type" : "object",
       "properties" : {
         "data" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "SynonymDictionaryList" : {
+      "type" : "object",
+      "properties" : {
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/DictionaryList"
+          }
+        }
+      }
+    },
+    "DictionaryList" : {
+      "type" : "object",
+      "properties" : {
+        "key" : {
+          "type" : "string"
+        },
+        "list" : {
           "type" : "array",
           "items" : {
             "type" : "string"
