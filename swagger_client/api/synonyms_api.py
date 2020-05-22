@@ -1754,6 +1754,7 @@ class SynonymsApi(object):
         :param async_req bool
         :param str text: 
         :param str prefixes_str: 
+        :param str exception_designation: 
         :return: String
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1776,12 +1777,13 @@ class SynonymsApi(object):
         :param async_req bool
         :param str text: 
         :param str prefixes_str: 
+        :param str exception_designation: 
         :return: String
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['text', 'prefixes_str']  # noqa: E501
+        all_params = ['text', 'prefixes_str', 'exception_designation']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1806,6 +1808,8 @@ class SynonymsApi(object):
             query_params.append(('text', params['text']))  # noqa: E501
         if 'prefixes_str' in params:
             query_params.append(('prefixes_str', params['prefixes_str']))  # noqa: E501
+        if 'exception_designation' in params:
+            query_params.append(('exception_designation', params['exception_designation']))  # noqa: E501
 
         header_params = {}
 

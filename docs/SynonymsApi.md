@@ -851,7 +851,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_regex_prefixes**
-> String get_regex_prefixes(text=text, prefixes_str=prefixes_str)
+> String get_regex_prefixes(text=text, prefixes_str=prefixes_str, exception_designation=exception_designation)
 
 
 
@@ -867,9 +867,10 @@ from pprint import pprint
 api_instance = swagger_client.SynonymsApi()
 text = 'text_example' # str |  (optional)
 prefixes_str = 'prefixes_str_example' # str |  (optional)
+exception_designation = 'exception_designation_example' # str |  (optional)
 
 try:
-    api_response = api_instance.get_regex_prefixes(text=text, prefixes_str=prefixes_str)
+    api_response = api_instance.get_regex_prefixes(text=text, prefixes_str=prefixes_str, exception_designation=exception_designation)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SynonymsApi->get_regex_prefixes: %s\n" % e)
@@ -881,6 +882,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **text** | **str**|  | [optional] 
  **prefixes_str** | **str**|  | [optional] 
+ **exception_designation** | **str**|  | [optional] 
 
 ### Return type
 
