@@ -122,6 +122,99 @@ class SynonymsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def get_all_categories_synonyms(self, **kwargs):  # noqa: E501
+        """get_all_categories_synonyms  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_categories_synonyms(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str list_desc:
+        :return: SynonymDictionaryList
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_all_categories_synonyms_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_all_categories_synonyms_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_all_categories_synonyms_with_http_info(self, **kwargs):  # noqa: E501
+        """get_all_categories_synonyms  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_all_categories_synonyms_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str list_desc:
+        :return: SynonymDictionaryList
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['list_desc']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_all_categories_synonyms" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'list_desc' in params:
+            query_params.append(('list_desc', params['list_desc']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/all-categories-synonyms', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='SynonymDictionaryList',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def get_all_end_designations(self, **kwargs):  # noqa: E501
         """get_all_end_designations  # noqa: E501
 
@@ -1729,6 +1822,196 @@ class SynonymsApi(object):
 
         return self.api_client.call_api(
             '/synonyms/prefixes', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='SynonymList',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_regex_prefixes(self, **kwargs):  # noqa: E501
+        """get_regex_prefixes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_regex_prefixes(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str text:
+        :param str prefixes_str:
+        :param str exception_designation:
+        :return: String
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_regex_prefixes_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_regex_prefixes_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_regex_prefixes_with_http_info(self, **kwargs):  # noqa: E501
+        """get_regex_prefixes  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_regex_prefixes_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str text:
+        :param str prefixes_str:
+        :param str exception_designation:
+        :return: String
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['text', 'prefixes_str', 'exception_designation']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_regex_prefixes" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'text' in params:
+            query_params.append(('text', params['text']))  # noqa: E501
+        if 'prefixes_str' in params:
+            query_params.append(('prefixes_str', params['prefixes_str']))  # noqa: E501
+        if 'exception_designation' in params:
+            query_params.append(('exception_designation', params['exception_designation']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/regex-prefixes', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='String',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def get_stand_alone(self, **kwargs):  # noqa: E501
+        """get_stand_alone  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_stand_alone(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: SynonymList
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.get_stand_alone_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.get_stand_alone_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def get_stand_alone_with_http_info(self, **kwargs):  # noqa: E501
+        """get_stand_alone  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.get_stand_alone_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: SynonymList
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method get_stand_alone" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/synonyms/stand-alone', 'GET',
             path_params,
             query_params,
             header_params,
