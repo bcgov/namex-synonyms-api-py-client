@@ -71,6 +71,7 @@ Class | Method | HTTP request | Description
 *ProbesApi* | [**get_liveness**](docs/ProbesApi.md#get_liveness) | **GET** /synonyms/probes/liveness | 
 *ProbesApi* | [**get_readiness**](docs/ProbesApi.md#get_readiness) | **GET** /synonyms/probes/readiness | 
 *SynonymsApi* | [**get_all_any_designations**](docs/SynonymsApi.md#get_all_any_designations) | **GET** /synonyms/all-any-designations | 
+*SynonymsApi* | [**get_all_categories_synonyms**](docs/SynonymsApi.md#get_all_categories_synonyms) | **GET** /synonyms/all-categories-synonyms | 
 *SynonymsApi* | [**get_all_end_designations**](docs/SynonymsApi.md#get_all_end_designations) | **GET** /synonyms/all-end-designations | 
 *SynonymsApi* | [**get_all_substitutions_synonyms**](docs/SynonymsApi.md#get_all_substitutions_synonyms) | **GET** /synonyms/all-substitutions-synonyms | 
 *SynonymsApi* | [**get_designated_any_all_words**](docs/SynonymsApi.md#get_designated_any_all_words) | **GET** /synonyms/designated-any-all-words | 
@@ -89,6 +90,7 @@ Class | Method | HTTP request | Description
 *SynonymsApi* | [**get_number_words**](docs/SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
 *SynonymsApi* | [**get_prefixes**](docs/SynonymsApi.md#get_prefixes) | **GET** /synonyms/prefixes | 
 *SynonymsApi* | [**get_regex_prefixes**](docs/SynonymsApi.md#get_regex_prefixes) | **GET** /synonyms/regex-prefixes | 
+*SynonymsApi* | [**get_stand_alone**](docs/SynonymsApi.md#get_stand_alone) | **GET** /synonyms/stand-alone | 
 *SynonymsApi* | [**get_stop_words**](docs/SynonymsApi.md#get_stop_words) | **GET** /synonyms/stop-words | 
 *SynonymsApi* | [**get_synonyms**](docs/SynonymsApi.md#get_synonyms) | **GET** /synonyms/{col}/{term} | 
 *SynonymsApi* | [**get_transform_text**](docs/SynonymsApi.md#get_transform_text) | **GET** /synonyms/transform-text | 

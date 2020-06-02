@@ -5,6 +5,7 @@ All URIs are relative to *https://localhost/api/v1*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_all_any_designations**](SynonymsApi.md#get_all_any_designations) | **GET** /synonyms/all-any-designations | 
+[**get_all_categories_synonyms**](SynonymsApi.md#get_all_categories_synonyms) | **GET** /synonyms/all-categories-synonyms | 
 [**get_all_end_designations**](SynonymsApi.md#get_all_end_designations) | **GET** /synonyms/all-end-designations | 
 [**get_all_substitutions_synonyms**](SynonymsApi.md#get_all_substitutions_synonyms) | **GET** /synonyms/all-substitutions-synonyms | 
 [**get_designated_any_all_words**](SynonymsApi.md#get_designated_any_all_words) | **GET** /synonyms/designated-any-all-words | 
@@ -23,6 +24,7 @@ Method | HTTP request | Description
 [**get_number_words**](SynonymsApi.md#get_number_words) | **GET** /synonyms/number-words | 
 [**get_prefixes**](SynonymsApi.md#get_prefixes) | **GET** /synonyms/prefixes | 
 [**get_regex_prefixes**](SynonymsApi.md#get_regex_prefixes) | **GET** /synonyms/regex-prefixes | 
+[**get_stand_alone**](SynonymsApi.md#get_stand_alone) | **GET** /synonyms/stand-alone | 
 [**get_stop_words**](SynonymsApi.md#get_stop_words) | **GET** /synonyms/stop-words | 
 [**get_synonyms**](SynonymsApi.md#get_synonyms) | **GET** /synonyms/{col}/{term} | 
 [**get_transform_text**](SynonymsApi.md#get_transform_text) | **GET** /synonyms/transform-text | 
@@ -55,6 +57,51 @@ except ApiException as e:
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**SynonymDictionaryList**](SynonymDictionaryList.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_all_categories_synonyms**
+> SynonymDictionaryList get_all_categories_synonyms(list_desc=list_desc)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.SynonymsApi()
+list_desc = 'list_desc_example' # str |  (optional)
+
+try:
+    api_response = api_instance.get_all_categories_synonyms(list_desc=list_desc)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SynonymsApi->get_all_categories_synonyms: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **list_desc** | **str**|  | [optional] 
 
 ### Return type
 
@@ -887,6 +934,47 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**String**](String.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_stand_alone**
+> SynonymList get_stand_alone()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.SynonymsApi()
+
+try:
+    api_response = api_instance.get_stand_alone()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling SynonymsApi->get_stand_alone: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**SynonymList**](SynonymList.md)
 
 ### Authorization
 
