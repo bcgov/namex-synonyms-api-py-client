@@ -1,3 +1,5 @@
+![Lifecycle](https://img.shields.io/badge/Lifecycle-Stable-97ca00)
+
 # swagger-client
 Retrieves the sets of synonyms for a given word.
 
