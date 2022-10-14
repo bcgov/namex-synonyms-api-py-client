@@ -53,7 +53,7 @@ class Configuration(object):
             return
 
         # Default Base url
-        self.host = os.getenv('SOLR_SYNONYMS_API_URL')
+        self.host = f'{os.getenv("SOLR_SYNONYMS_API_URL", None)}{os.getenv("SOLR_SYNONYMS_API_VERSION", None)}'
         # Temp file folder for downloading files
         self.temp_folder_path = None
 
